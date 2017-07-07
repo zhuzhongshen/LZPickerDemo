@@ -19,13 +19,13 @@
 - (BOOL)application:(UIApplication *)application didFinishLaunchingWithOptions:(NSDictionary *)launchOptions {
     
     
+
     self.window = [[UIWindow alloc]init];
     self.window.frame = [UIScreen mainScreen].bounds;
     PickViewVC *mainVC = [[PickViewVC alloc]init];
     UINavigationController *NVC = [[UINavigationController alloc]initWithRootViewController:mainVC];
     [self.window setRootViewController:NVC];
     [self.window makeKeyAndVisible];
-    
     // Override point for customization after application launch.
     return YES;
 }
